@@ -4,6 +4,7 @@ import tkinter as tk
 from tkinter import messagebox
 import pyautogui
 from PIL import ImageTk
+from PIL import Image
 def Do_Pdf():
     try:
         page_count = int(p_sayisi.get())
@@ -118,7 +119,7 @@ crop_l = tk.Entry(f_crop, width=5); crop_l.insert(0, "0"); crop_l.pack(side="lef
 crop_t = tk.Entry(f_crop, width=5); crop_t.insert(0, "0"); crop_t.pack(side="left", padx=2)
 crop_r = tk.Entry(f_crop, width=5); crop_r.insert(0, "0"); crop_r.pack(side="left", padx=2)
 crop_b = tk.Entry(f_crop, width=5); crop_b.insert(0, "0"); crop_b.pack(side="left", padx=2)
-btn_select = tk.Button(app,text= "kesilcek yeri seçin",bg="#d9edf7",fg="#31708f",)
+btn_select = tk.Button(app,text= "kesilcek yeri seçin", command=Select_Cut_Area, bg="#d9edf7",fg="#31708f",)
 btn_select.pack(fill="x",padx=15, pady=(5, 10))
 btn = tk.Button(app, text="START", command=Do_Pdf, bg="#e1e1e1", height=2)
 btn.pack(fill="x", padx=15, pady=20)
