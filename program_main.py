@@ -52,7 +52,7 @@ def Select_Cut_Area():
     app.after(500)#bu olmadan çalışmıyor buna dön!
     screenshot =  pyautogui.screenshot()
     screen_weight, screen_height = screenshot.size
-    select_win = tk.toplevel(app)
+    select_win = tk.Toplevel(app)
     select_win.attribtes("-fullscreen", True)
     select_win.attribtes("-topmost", True)
     select_win.config(cursor = "cross") #imleç
