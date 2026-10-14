@@ -3,7 +3,7 @@ import os
 import tkinter as tk
 from tkinter import messagebox
 import pyautogui
-from PIL import Image
+from PIL import ImageTk
 def Do_Pdf():
     try:
         page_count = int(p_sayisi.get())
