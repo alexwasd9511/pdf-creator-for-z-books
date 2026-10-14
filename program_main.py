@@ -53,8 +53,8 @@ def Select_Cut_Area():
     screenshot =  pyautogui.screenshot()
     screen_weight, screen_height = screenshot.size
     select_win = tk.Toplevel(app)
-    select_win.attribtes("-fullscreen", True)
-    select_win.attribtes("-topmost", True)
+    select_win.attributes("-fullscreen", True)
+    select_win.attributes("-topmost", True)
     select_win.config(cursor = "cross") #imleç
 
     background_image = ImageTk.PhotoImage(screenshot)
